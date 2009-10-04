@@ -24,9 +24,9 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "app_config.gemspec",
-     "lib/rails_config.rb",
+     "lib/app_config.rb",
+     "test/app_config_test.rb",
      "test/fixtures/application.yml",
-     "test/rails_config_test.rb",
      "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/phuesler/app_config}
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{A little helper to define and access the app configuration}
   s.test_files = [
-    "test/rails_config_test.rb",
+    "test/app_config_test.rb",
      "test/test_helper.rb"
   ]
 

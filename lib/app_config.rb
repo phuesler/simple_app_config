@@ -1,5 +1,5 @@
 require 'ostruct'
-class ApplicationConfig
+class AppConfig
   def self.create(yaml_file, options = {})
     yaml_data = YAML::load_file(yaml_file)
     data = {}
