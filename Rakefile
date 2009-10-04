@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "simple_app_config"
     gem.summary = %Q{A little helper to define and access the app configuration}
-    gem.description = %Q{Use yml and erb and speficiy environments and scopes}
+    gem.description = %Q{Use yml and erb and specify environments and scopes}
     gem.email = "patrick.huesler@gmail.com"
     gem.homepage = "http://github.com/phuesler/simple_app_config"
     gem.authors = ["Patrick Huesler"]

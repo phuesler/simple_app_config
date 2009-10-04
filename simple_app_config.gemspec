@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{simple_app_config}
-  s.version = "0.1.2"
+  s.version = "0.1.21"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Patrick Huesler"]
   s.date = %q{2009-10-04}
-  s.description = %q{Use yml and erb and speficiy environments and scopes}
+  s.description = %q{Use yml and erb and specify environments and scopes}
   s.email = %q{patrick.huesler@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -23,9 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "lib/app_config.rb",
-     "simple_app_config.gemspec",
-     "test/app_config_test.rb",
+     "lib/simple_app_config.rb",
      "test/fixtures/application.yml",
      "test/test_helper.rb"
   ]
@@ -35,7 +33,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{A little helper to define and access the app configuration}
   s.test_files = [
-    "test/app_config_test.rb",
+    "test/simple_app_config_test.rb",
      "test/test_helper.rb"
   ]
 
