@@ -1,6 +1,53 @@
-= rails_config
+= simple app config
 
-Description goes here.
+Generates a configuration object:
+
+* Pass in a YAML file
+* Pass in an environment as a filter
+* Use YAML defaults
+* Use ERB
+* Returns an OpenStruct so top level attributes can be accessed via method
+
+Here is how a configuration file could look like:
+
+  application: RailsConfig
+  version: <%= 'version'.upcase %>
+
+  defaults: &defaults
+    payment:
+      key: payment_key
+
+  development:
+    <<: *defaults
+    payment:
+      key: development_payment_key
+
+  production:
+    <<: *defaults
+
+== Installation
+
+=== Via github
+  gem install phuesler-simple_app_config
+  
+=== Via gem cutter (http://www.gemcutter.org)
+  gem install gemcutter
+  gem tumble
+  gem install simple_app_config
+
+== Usage
+  
+ require 'simple_app_config'
+ Config = AppConfig.create("config/application.yml", :environment => 'development')
+ 
+ puts Config.application
+ puts Config.payment['key']
+
+When used in a Rails project, create an initializer and add something like this:
+
+ require 'simple_app_config'
+ Config = AppConfig.create("#{Rails.root}/config/application.yml", :environment => Rails.env)
+
 
 == Note on Patches/Pull Requests
  

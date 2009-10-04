@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "app_config"
+    gem.name = "simple_app_config"
     gem.summary = %Q{A little helper to define and access the app configuration}
     gem.description = %Q{Use yml and erb and speficiy environments and scopes}
     gem.email = "patrick.huesler@gmail.com"
-    gem.homepage = "http://github.com/phuesler/app_config"
+    gem.homepage = "http://github.com/phuesler/simple_app_config"
     gem.authors = ["Patrick Huesler"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -50,7 +50,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "rails_config #{version}"
+  rdoc.title = "simple_app_config #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

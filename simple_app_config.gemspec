@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{app_config}
+  s.name = %q{simple_app_config}
   s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -23,13 +23,12 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "app_config.gemspec",
      "lib/app_config.rb",
      "test/app_config_test.rb",
      "test/fixtures/application.yml",
      "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/phuesler/app_config}
+  s.homepage = %q{http://github.com/phuesler/simple_app_config}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
