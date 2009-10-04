@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "rails_config"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "app_config"
+    gem.summary = %Q{A little helper to define and access the app configuration}
+    gem.description = %Q{A little helper to define and access the app configuration}
     gem.email = "patrick.huesler@gmail.com"
-    gem.homepage = "http://github.com/phuesler/rails_config"
+    gem.homepage = "http://github.com/phuesler/app_config"
     gem.authors = ["Patrick Huesler"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
