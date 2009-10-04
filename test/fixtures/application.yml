@@ -1,5 +1,7 @@
+application: RailsConfig
+version: <%= 'version'.upcase %>
+
 defaults: &defaults
-  application: RailsConfig
   payment:
     key: payment_key
 
