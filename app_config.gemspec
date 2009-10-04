@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "app_config.gemspec",
      "lib/rails_config.rb",
      "test/fixtures/application.yml",
      "test/rails_config_test.rb",
