@@ -24,7 +24,9 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/simple_app_config.rb",
+     "simple_app_config.gemspec",
      "test/fixtures/application.yml",
+     "test/simple_app_config_test.rb",
      "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/phuesler/simple_app_config}
