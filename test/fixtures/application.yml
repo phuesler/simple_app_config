@@ -1,0 +1,12 @@
+defaults: &defaults
+  application: RailsConfig
+  payment:
+    key: payment_key
+
+development:
+  <<: *defaults
+  payment:
+    key: development_payment_key
+
+production:
+  <<: *defaults
