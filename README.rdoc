@@ -43,6 +43,14 @@ Here is how a configuration file could look like:
  puts Config.application
  puts Config.payment['key']
 
+Or if you prefer the hash syntax do
+
+  require 'simple_app_config'
+  Config = AppConfig.create("config/application.yml", :environment => 'development', :format => :hash)
+
+  puts Config.application
+  puts Config['payment']['key']
+
 When used in a Rails project, create an initializer and add something like this:
 
  require 'simple_app_config'
