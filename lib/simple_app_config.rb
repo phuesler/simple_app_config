@@ -1,6 +1,6 @@
 require 'ostruct'
 require 'erb'
-require 'YAML'
+require 'YAML' unless defined?(YAML)
 class AppConfig
   def self.create(yaml_file, options = {})
     format = options[:format] || :struct
